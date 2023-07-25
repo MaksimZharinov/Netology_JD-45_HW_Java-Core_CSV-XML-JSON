@@ -20,16 +20,16 @@ public class Main {
 
     public static void main(String[] args) {
         //task1
-//        String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
-//        String fileName = "data.csv";
-//        List<Employee> list = parseCSV(columnMapping, fileName);
-//        String json = listToJson(list);
-//        writeString(json, "data.json");
+        String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
+        String fileName = "data.csv";
+        List<Employee> list = parseCSV(columnMapping, fileName);
+        String json = listToJson(list);
+        writeString(json, "data.json");
 
         //task2
-        List<Employee> list = parseXML("data.xml");
-        String json = listToJson(list);
-        writeString(json, "data2.json");
+        List<Employee> list2 = parseXML("data.xml");
+        String json2 = listToJson(list2);
+        writeString(json2, "data2.json");
     }
 
     private static List<Employee> parseXML(String file) {
